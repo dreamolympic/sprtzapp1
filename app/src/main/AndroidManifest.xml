@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sportzerplbschool">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Addrole"></activity>
+        <activity android:name=".Addstaff" />
+        <activity android:name=".Addfeeplan" />
+        <activity android:name=".Addcenter" />
+        <activity android:name=".Addplayer" />
+        <activity android:name=".Parentsinfo" />
+        <activity android:name=".AcademyDetails" />
+        <activity android:name=".Allfeeplanslist" />
+        <activity android:name=".Allroleslist" />
+        <activity android:name=".Allstafflist" />
+        <activity android:name=".Allcenterslist" />
+        <activity android:name=".Allplayerslist" />
+        <activity android:name=".DashboardManager" />
+        <activity android:name=".Myprofile" />
+        <activity android:name=".DashboardUser" />
+        <activity android:name=".Helpfaq" />
+        <activity android:name=".Tospp" />
+        <activity android:name=".Contactus" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

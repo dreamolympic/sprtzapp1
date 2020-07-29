@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sportzer PLB School</string>
+    <string-array name="user_type">
+        <item>user</item>
+        <item>manager</item>
+    </string-array>
+</resources>

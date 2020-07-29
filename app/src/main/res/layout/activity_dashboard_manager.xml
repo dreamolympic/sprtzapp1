@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:contentDescription="Image"
+        app:srcCompat="@drawable/dos_logo" />
+
+    <TextView
+        android:id="@+id/tvmnumbermanager"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#4A148C"
+        android:layout_marginTop="35dp"
+        android:layout_height="wrap_content"  />
+
+
+    <TextView
+        android:id="@+id/tvdashboardcenters"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="75dp"
+        android:textColor="#2196F3"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"  />
+
+    <TextView
+        android:id="@+id/tvdashboardplayers"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="75dp"
+        android:textColor="#2196F3"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"  />
+
+    <TextView
+        android:id="@+id/tvdashboardstaff"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="75dp"
+        android:textColor="#2196F3"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"  />
+
+    <TextView
+        android:id="@+id/tvdashboardroles"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="75dp"
+        android:textColor="#2196F3"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"  />
+
+    <TextView
+        android:id="@+id/tvdashboardfeeplans"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="75dp"
+        android:textColor="#2196F3"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"  />
+
+</LinearLayout>

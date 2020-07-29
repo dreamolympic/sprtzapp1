@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+<ImageView
+    android:id="@+id/imageview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="image"
+    app:srcCompat="@drawable/dos_logo" />
+
+<TextView
+    android:id="@+id/tvacname"
+    android:layout_width="wrap_content"
+    android:text="Academy Name"
+    android:layout_height="wrap_content" />
+
+<EditText
+    android:id="@+id/etacname"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content" />
+
+
+<TextView
+    android:id="@+id/tvactype"
+    android:layout_width="wrap_content"
+    android:text="Type"
+    android:layout_height="wrap_content" />
+
+<EditText
+    android:id="@+id/etactype"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content" />
+
+
+<TextView
+    android:id="@+id/tvacaedate"
+    android:layout_width="wrap_content"
+    android:text="Application Access Established Date"
+    android:layout_height="wrap_content" />
+
+<EditText
+    android:id="@+id/etacaedate"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content" />
+
+
+<TextView
+    android:id="@+id/tvaccountry"
+    android:layout_width="wrap_content"
+    android:text="Country"
+    android:layout_height="wrap_content" />
+
+<EditText
+    android:id="@+id/etaccountry"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content" />
+
+
+<TextView
+    android:id="@+id/tvacstate"
+    android:layout_width="wrap_content"
+    android:text="State"
+    android:layout_height="wrap_content" />
+
+<EditText
+    android:id="@+id/etpacstate"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tvaccity"
+        android:layout_width="wrap_content"
+        android:text="City"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etpaccity"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvaczipcode"
+        android:layout_width="wrap_content"
+        android:text="Zip Code"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etaczipcode"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvacaddress1"
+        android:layout_width="wrap_content"
+        android:text="Address 1"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etacaddress1"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvacaddress2"
+        android:layout_width="wrap_content"
+        android:text="Address 2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etacaddress2"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvaccontactnumber"
+        android:layout_width="wrap_content"
+        android:text="Contact Number"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etaccontactnumber"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvacemailid"
+        android:layout_width="wrap_content"
+        android:text="Email Address"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etacemailid"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvacwebsite"
+        android:layout_width="wrap_content"
+        android:text="Web Site Link"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etacwebsite"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+    android:id="@+id/btacsubmit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SUBMIT"  />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+

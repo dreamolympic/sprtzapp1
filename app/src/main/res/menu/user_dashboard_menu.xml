@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="withText">
+    </item>
+
+    <item android:id="@+id/myprofile"
+        android:title="My Profile"
+        app:showAsAction="withText">
+    </item>
+
+    <item android:id="@+id/parentsinfo"
+        android:title="Parents Info"
+        app:showAsAction="withText">
+    </item>
+
+    <item android:id="@+id/shareapp"
+        android:title="Share App"
+        app:showAsAction="withText">
+    </item>
+
+    <item android:id="@+id/privacypolicy"
+        android:title="Terms of Serivce and Privacy Policy"
+        app:showAsAction="withText">
+    </item>
+
+    <item android:id="@+id/contactus"
+        android:title="Contact us"
+        app:showAsAction="withText">
+    </item>
+
+</menu>

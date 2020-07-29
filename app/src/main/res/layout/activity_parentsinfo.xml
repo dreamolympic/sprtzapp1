@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tvparent"
+                android:layout_width="wrap_content"
+                android:text="Parents Contact Details"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"  />
+
+            <TextView
+                android:id="@+id/tvmotherfname"
+                android:layout_width="wrap_content"
+                android:text="Mother First Name"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etmotherfname"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tvmotherlname"
+                android:layout_width="wrap_content"
+                android:text="Mother Last Name"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etmotherlname"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tvmothermobile"
+                android:layout_width="wrap_content"
+                android:text="Mother Mobile Number"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etmothermobile"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvmotheremail"
+                android:layout_width="wrap_content"
+                android:text="Mother Email ID"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etmotheremail"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tvfatherfname"
+                android:layout_width="wrap_content"
+                android:text="Father First Name"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etfatherfname"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tvfatherlname"
+                android:layout_width="wrap_content"
+                android:text="Father Last Name"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etfatherlname"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tvfathermobile"
+                android:layout_width="wrap_content"
+                android:text="Father Mobile Number"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etfathermobile"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvfatheremail"
+                android:layout_width="wrap_content"
+                android:text="Father Email ID"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etfatheremail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btnparentupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"  />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

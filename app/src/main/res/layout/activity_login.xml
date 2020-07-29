@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/dos_logo" />
+
+    <TextView
+        android:id="@+id/tvwelcome"
+        android:background="#2196F3"
+        android:text="Welcome to Sportzer PLB@Schools!"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Username"
+        android:layout_gravity="left"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/etmobilenumbertologin"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter Mobile Number"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvpassword"
+        android:layout_width="wrap_content"
+        android:text="Password"
+        android:layout_gravity="left"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/etpasswordtologin"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:hint="Please enter your password"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Login"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnforgotpassword"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Forgot Password?"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Sign-Up"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/tvTOS1"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textSize="17dp"
+        android:text="By logging in you agree to our"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvTOS2"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="17dp"
+        android:text="Terms of Serivce and Privacy Policy"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvusertype"
+        android:layout_width="wrap_content"
+        android:textSize="17dp"
+        android:text="User type : "
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spusertype"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_height="30dp" />
+
+</LinearLayout>
+
