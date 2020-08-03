@@ -25,11 +25,9 @@ public class Contactus extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contactus);
 
-        //getSupportActionBar().setTitle("Contact Us");
-
-
         toolbar = (Toolbar)findViewById(R.id.toolbarcontactus);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Contact Us");
 
         //to implement back button on tool bar
         getSupportActionBar().setDisplayShowHomeEnabled(true);

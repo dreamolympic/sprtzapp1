@@ -34,7 +34,7 @@ public class DashboardUser extends AppCompatActivity {
 
          toolbar = (Toolbar)findViewById(R.id.toolbaruserdashboard);
          setSupportActionBar(toolbar);
-        // toolbar.setTitle("Test Title");
+         getSupportActionBar().setTitle("User Dashbaord Title");
 
          drawerLayout = (DrawerLayout)findViewById(R.id.drawerlayout);
          nav = (NavigationView)findViewById(R.id.nav);

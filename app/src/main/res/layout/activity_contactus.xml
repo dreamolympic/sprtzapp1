@@ -14,7 +14,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/toolbarcontactus"
-            app:title="Contact Us"
             android:textAlignment="center"
             android:layout_gravity="center_horizontal"
             app:titleTextColor="@color/cardview_light_background"

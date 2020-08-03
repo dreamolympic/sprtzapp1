@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:text="Venkat Thanigundala"/>
 
 
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:text="venkat.thanigundala@dreamolympic.co"/>
 
 </LinearLayout>

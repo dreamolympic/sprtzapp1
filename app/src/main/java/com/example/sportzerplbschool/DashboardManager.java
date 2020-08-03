@@ -1,7 +1,11 @@
 package com.example.sportzerplbschool;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,17 +14,76 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class DashboardManager extends AppCompatActivity {
 
     TextView mnumbermanager, countplayers, countcenters, countstaff, countroles, countfeeplans ;
+    DrawerLayout drawerLayout;
+    Toolbar toolbar;
+    ActionBarDrawerToggle toggle;
+    NavigationView nav;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_manager);
 
-        //getSupportActionBar().setTitle("Academy Profile");
+        toolbar = (Toolbar)findViewById(R.id.toolbarmanagerdashboard);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Academy Profile");
+
+        drawerLayout = (DrawerLayout)findViewById(R.id.drawerlayoutmanager);
+        nav = (NavigationView)findViewById(R.id.nav);
+        toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar, R.string.open,R.string.close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId())
+                {
+                    case R.id.home:
+                        //Toast.makeText(getApplicationContext(),"Home panel is open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.centers :
+                        startActivity(new Intent(DashboardManager.this, Allcenterslist.class));
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.players :
+                        startActivity(new Intent(DashboardManager.this, Allplayerslist.class ));
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.staff :
+                        startActivity(new Intent(DashboardManager.this, Allstafflist.class));
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.roles :
+                        startActivity(new Intent(DashboardManager.this, Allroleslist.class));
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.feeplans :
+                        startActivity(new Intent(DashboardManager.this, Allfeeplanslist.class));
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+                }
+
+
+                return true;
+            }
+        });
+
 
         mnumbermanager = (TextView)findViewById(R.id.tvmnumbermanager);
         Bundle b = getIntent().getExtras();

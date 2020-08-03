@@ -39,10 +39,9 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        //getSupportActionBar().setTitle("Sportzer PLB@Schools Mobile App");
-
         toolbar = (androidx.appcompat.widget.Toolbar)findViewById(R.id.toolbarlogin);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Login Page of Mobile App");
 
         login_button = (Button)findViewById(R.id.btnlogin);
         etMobilenumbertologin = (EditText) findViewById(R.id.etmobilenumbertologin);

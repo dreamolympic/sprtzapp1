@@ -15,7 +15,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/toolbarlogin"
-            app:title="Login page of Mobile App"
             app:titleTextColor="@color/cardview_light_background"
             android:background="@color/colorAccent"/>
     </RelativeLayout>
