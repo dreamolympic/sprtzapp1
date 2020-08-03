@@ -20,7 +20,7 @@ public class DashboardManager extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_manager);
 
-        getSupportActionBar().setTitle("Academy Profile");
+        //getSupportActionBar().setTitle("Academy Profile");
 
         mnumbermanager = (TextView)findViewById(R.id.tvmnumbermanager);
         Bundle b = getIntent().getExtras();

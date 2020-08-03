@@ -15,7 +15,7 @@ public class Allfeeplanslist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_allfeeplanslist);
 
-        getSupportActionBar().setTitle("All Fee Plans List");
+        //getSupportActionBar().setTitle("All Fee Plans List");
 
         FloatingActionButton fab = findViewById(R.id.fab_add_feeplan);
 

@@ -11,7 +11,7 @@ public class Addplayer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addplayer);
 
-        getSupportActionBar().setTitle("Add Player Screen");
+        //getSupportActionBar().setTitle("Add Player Screen");
 
     }
 }

@@ -7,6 +7,20 @@
     android:gravity="center_horizontal"
     android:padding="10dp">
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarlogin"
+            app:title="Login page of Mobile App"
+            app:titleTextColor="@color/cardview_light_background"
+            android:background="@color/colorAccent"/>
+    </RelativeLayout>
+
+
     <ImageView
         android:id="@+id/imageview"
         android:layout_width="wrap_content"

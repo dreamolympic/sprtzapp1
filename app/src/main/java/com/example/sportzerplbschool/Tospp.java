@@ -15,7 +15,7 @@ public class Tospp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tospp);
 
-        getSupportActionBar().setTitle("Terms of Service and Privacy Policy");
+        //getSupportActionBar().setTitle("Terms of Service and Privacy Policy");
 
          webView = (WebView) findViewById(R.id.privacyid);
 

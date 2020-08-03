@@ -1,7 +1,10 @@
 package com.example.sportzerplbschool;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
@@ -10,8 +13,16 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class DashboardUser extends AppCompatActivity {
+
+    DrawerLayout drawerLayout;
+    Toolbar toolbar;
+    ActionBarDrawerToggle toggle;
+    NavigationView nav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +32,36 @@ public class DashboardUser extends AppCompatActivity {
         Bundle b = getIntent().getExtras();
         String number = b.getString("mobilenumberfromlogin");
 
-        getSupportActionBar().setTitle("Hello  "+number);
+         toolbar = (Toolbar)findViewById(R.id.toolbaruserdashboard);
+         setSupportActionBar(toolbar);
+        // toolbar.setTitle("Test Title");
+
+         drawerLayout = (DrawerLayout)findViewById(R.id.drawerlayout);
+         nav = (NavigationView)findViewById(R.id.nav);
+         toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);
+
+         drawerLayout.addDrawerListener(toggle);
+         toggle.syncState();
+
+         nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+             @Override
+             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                 switch (item.getItemId())
+                 {
+                     case R.id.menu_home:
+                         Toast.makeText(getApplicationContext(),"Home panel is open",Toast.LENGTH_LONG).show();
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                         break;
+
+
+                     case R.id.parents_info :
+                         Toast.makeText(getApplicationContext(),"Parent panel is open",Toast.LENGTH_LONG).show();
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                         break;
+                 }
+                 return true;
+             }
+         });
 
     }
 

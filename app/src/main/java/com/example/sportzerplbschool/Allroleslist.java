@@ -15,7 +15,7 @@ public class Allroleslist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_allroleslist);
 
-        getSupportActionBar().setTitle("All Roles List");
+       // getSupportActionBar().setTitle("All Roles List");
 
         FloatingActionButton fab = findViewById(R.id.fab_add_role);
 

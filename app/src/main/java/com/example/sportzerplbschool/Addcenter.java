@@ -11,7 +11,7 @@ public class Addcenter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addcenter);
 
-        getSupportActionBar().setTitle("Add Center Test");
+       // getSupportActionBar().setTitle("Add Center Test");
 
     }
 }

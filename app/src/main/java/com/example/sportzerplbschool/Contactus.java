@@ -1,10 +1,15 @@
 package com.example.sportzerplbschool;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,13 +18,22 @@ public class Contactus extends AppCompatActivity {
     Button btnCallus;
     Button btnWritetous;
     Button btnHelpfaq;
+    androidx.appcompat.widget.Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contactus);
 
-        getSupportActionBar().setTitle("Contact Us");
+        //getSupportActionBar().setTitle("Contact Us");
+
+
+        toolbar = (Toolbar)findViewById(R.id.toolbarcontactus);
+        setSupportActionBar(toolbar);
+
+        //to implement back button on tool bar
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         btnCallus = (Button) findViewById(R.id.btncallus);
         btnWritetous = (Button) findViewById(R.id.writetous);
@@ -66,6 +80,18 @@ public class Contactus extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+         //to define action on back button press
+          if (item.getItemId() == android.R.id.home)
+             {
+               finish();
+               }
+
+        return super.onOptionsItemSelected(item);
     }
 
 }

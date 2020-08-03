@@ -15,7 +15,7 @@ public class Allplayerslist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_allplayerslist);
 
-        getSupportActionBar().setTitle("All Players List");
+        //getSupportActionBar().setTitle("All Players List");
 
         FloatingActionButton fab = findViewById(R.id.fab_add_player);
 

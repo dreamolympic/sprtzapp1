@@ -15,7 +15,7 @@ public class Allstafflist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_allstafflist);
 
-        getSupportActionBar().setTitle("All Staff List");
+        //getSupportActionBar().setTitle("All Staff List");
 
         FloatingActionButton fab = findViewById(R.id.fab_add_staff);
 

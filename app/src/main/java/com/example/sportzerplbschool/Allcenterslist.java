@@ -15,7 +15,7 @@ public class Allcenterslist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_allcenterslist);
 
-        getSupportActionBar().setTitle("All Centers List");
+       // getSupportActionBar().setTitle("All Centers List");
 
         FloatingActionButton fab = findViewById(R.id.fab_add_center);
 

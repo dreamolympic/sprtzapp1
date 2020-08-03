@@ -11,7 +11,7 @@ public class Myprofile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myprofile);
 
-        getSupportActionBar().setTitle("My Profile");
+        //getSupportActionBar().setTitle("My Profile");
 
     }
 }
