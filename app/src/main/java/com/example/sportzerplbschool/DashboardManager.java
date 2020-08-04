@@ -32,7 +32,7 @@ public class DashboardManager extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_manager);
 
-        toolbar = (Toolbar)findViewById(R.id.toolbarmanagerdashboard);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Academy Profile");
 
@@ -49,7 +49,6 @@ public class DashboardManager extends AppCompatActivity {
                 switch (item.getItemId())
                 {
                     case R.id.home:
-                        //Toast.makeText(getApplicationContext(),"Home panel is open",Toast.LENGTH_LONG).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
@@ -77,6 +76,58 @@ public class DashboardManager extends AppCompatActivity {
                         startActivity(new Intent(DashboardManager.this, Allfeeplanslist.class));
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
+
+                    case R.id.tags :
+                        Toast.makeText(getApplicationContext(),"Tags panel is open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.calendar :
+                        Toast.makeText(getApplicationContext(),"Calendar panel is open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.assessments :
+                        Toast.makeText(getApplicationContext(),"Assessments panel is open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.competitions :
+                        Toast.makeText(getApplicationContext(),"Competitions panel is open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.messaging :
+                        Toast.makeText(getApplicationContext(),"Messaging panel is open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.staffrating :
+                        Toast.makeText(getApplicationContext(),"Staff Rating panel is open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.requests :
+                        Toast.makeText(getApplicationContext(),"Requests panel is open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.post :
+                        Toast.makeText(getApplicationContext(),"Post panel is open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.preferences :
+                        Toast.makeText(getApplicationContext(),"Preferences panel is open",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
+
+                    case R.id.logout :
+                        startActivity(new Intent(DashboardManager.this, Login.class));
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        finish();
+                        break;
+
                 }
 
 

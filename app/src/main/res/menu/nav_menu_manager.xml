@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <group android:checkableBehavior="single">
+
     <item android:id="@+id/home"
         android:title="Home"/>
     <item android:id="@+id/centers"
@@ -13,6 +15,34 @@
         android:title="Roles"/>
     <item android:id="@+id/feeplans"
         android:title="Fee Plans"/>
+    <item android:id="@+id/tags"
+        android:title="Tags"/>
+    <item android:id="@+id/calendar"
+        android:title="Calendar"/>
+    <item android:id="@+id/assessments"
+        android:title="Assessments"/>
+    <item android:id="@+id/competitions"
+        android:title="Competitions"/>
+    <item android:id="@+id/messaging"
+        android:title="Messaging"/>
+    <item android:id="@+id/staffrating"
+        android:title="Staff Rating"/>
+    <item android:id="@+id/requests"
+        android:title="Requests"/>
+    <item android:id="@+id/post"
+        android:title="Post"/>
+    <item android:id="@+id/preferences"
+        android:title="Preferences"/>
+
+    </group>
+
+
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/logout"
+        android:title="Logout"/>
+    </group>
+
+
 
 </menu>
 

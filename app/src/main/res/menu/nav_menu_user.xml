@@ -1,10 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/menu_home"
+  <group android:checkableBehavior="single">
+
+    <item android:id="@+id/home"
         android:title="Home"/>
+
+    <item android:id="@+id/profile"
+        android:title="Profile"/>
+
     <item android:id="@+id/parents_info"
-        android:title="Parents Info"/>
+        android:title="Parent Contact Info"/>
+
+    <item android:id="@+id/calendar"
+        android:title="Calendar"/>
+
+    <item android:id="@+id/assessments"
+        android:title="Assessments"/>
+
+    <item android:id="@+id/feeplan"
+        android:title="Fee Plan"/>
+
+    <item android:id="@+id/paymentdue"
+        android:title="Payment Dues"/>
+
+    <item android:id="@+id/paymenthistory"
+        android:title="Payment History"/>
+
+    <item android:id="@+id/ratestaff"
+        android:title="Rate Staff"/>
+
+    <item android:id="@+id/post"
+        android:title="Post"/>
+
+   </group>
+
+
+     <group android:checkableBehavior="single">
+
+      <item android:id="@+id/logout"
+          android:title="Logout"/>
+
+      </group>
 
 </menu>
 

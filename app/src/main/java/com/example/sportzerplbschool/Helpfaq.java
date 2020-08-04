@@ -21,7 +21,7 @@ public class Helpfaq extends AppCompatActivity {
         setContentView(R.layout.activity_helpfaq);
 
 
-        toolbar = (Toolbar)findViewById(R.id.toolbarhelpfaq);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Help and FAQs");
 

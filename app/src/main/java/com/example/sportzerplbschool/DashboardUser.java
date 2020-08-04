@@ -32,7 +32,7 @@ public class DashboardUser extends AppCompatActivity {
         Bundle b = getIntent().getExtras();
         String number = b.getString("mobilenumberfromlogin");
 
-         toolbar = (Toolbar)findViewById(R.id.toolbaruserdashboard);
+         toolbar = (Toolbar)findViewById(R.id.toolbar);
          setSupportActionBar(toolbar);
          getSupportActionBar().setTitle("User Dashbaord Title");
 
@@ -48,16 +48,62 @@ public class DashboardUser extends AppCompatActivity {
              public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                  switch (item.getItemId())
                  {
-                     case R.id.menu_home:
-                         Toast.makeText(getApplicationContext(),"Home panel is open",Toast.LENGTH_LONG).show();
+                     case R.id.home:
+                        // Toast.makeText(getApplicationContext(),"Home panel is open",Toast.LENGTH_LONG).show();
                          drawerLayout.closeDrawer(GravityCompat.START);
                          break;
 
+                     case R.id.profile:
+                         startActivity(new Intent(DashboardUser.this, Myprofile.class));
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                         break;
 
                      case R.id.parents_info :
-                         Toast.makeText(getApplicationContext(),"Parent panel is open",Toast.LENGTH_LONG).show();
+                         startActivity(new Intent(DashboardUser.this, Parentsinfo.class));
                          drawerLayout.closeDrawer(GravityCompat.START);
                          break;
+
+                     case R.id.calendar :
+                         Toast.makeText(getApplicationContext(),"Calendar panel is open",Toast.LENGTH_LONG).show();
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                         break;
+
+                     case R.id.assessments :
+                         Toast.makeText(getApplicationContext(),"Assessments panel is open",Toast.LENGTH_LONG).show();
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                         break;
+
+                     case R.id.feeplan :
+                         Toast.makeText(getApplicationContext(),"Fee Plan panel is open",Toast.LENGTH_LONG).show();
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                         break;
+
+                     case R.id.paymentdue :
+                         Toast.makeText(getApplicationContext(),"Payment Due panel is open",Toast.LENGTH_LONG).show();
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                         break;
+
+                     case R.id.paymenthistory :
+                         Toast.makeText(getApplicationContext(),"Payment History panel is open",Toast.LENGTH_LONG).show();
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                         break;
+
+                     case R.id.ratestaff :
+                         Toast.makeText(getApplicationContext(),"Rate Staff panel is open",Toast.LENGTH_LONG).show();
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                         break;
+
+                     case R.id.post :
+                         Toast.makeText(getApplicationContext(),"Post panel is open",Toast.LENGTH_LONG).show();
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                         break;
+
+                     case R.id.logout :
+                         startActivity(new Intent(DashboardUser.this, Login.class));
+                         drawerLayout.closeDrawer(GravityCompat.START);
+                         finish();
+                         break;
+
                  }
                  return true;
              }
@@ -75,20 +121,6 @@ public class DashboardUser extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.logout:
-                Intent intent1 = new Intent(DashboardUser.this, Login.class);
-                startActivity(intent1);
-                finish();
-                return true;
-            case R.id.myprofile:
-               Intent intent2 = new Intent(DashboardUser.this, Myprofile.class);
-               startActivity(intent2);
-               return true;
-            case R.id.parentsinfo:
-                Intent intent3 = new Intent(DashboardUser.this, Parentsinfo.class);
-                startActivity(intent3);
-                return true;
-
             case R.id.shareapp:
                 //To share the mobile app. Subject line and body line with mobile link -- link to be updated once our app released to playstore.
                 Intent shareIntent12 = new Intent(Intent.ACTION_SEND);
