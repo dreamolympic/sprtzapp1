@@ -137,9 +137,11 @@ public class DashboardManager extends AppCompatActivity {
 
 
         mnumbermanager = (TextView)findViewById(R.id.tvmnumbermanager);
-        Bundle b = getIntent().getExtras();
-        String number = b.getString("mobilenumberfromlogin");
-        mnumbermanager.setText("Hello " + number);
+       // Bundle b = getIntent().getExtras();
+       // String number = b.getString("mobilenumberfromlogin");
+       // mnumbermanager.setText("Hello " + number);
+        mnumbermanager.setText("Hello Administrator" );
+
 
         int centerscount = 2;
         countcenters = (TextView)findViewById(R.id.tvdashboardcenters);
