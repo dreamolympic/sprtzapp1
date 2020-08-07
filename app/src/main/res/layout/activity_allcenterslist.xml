@@ -25,10 +25,11 @@
 
 
         <TextView
+            android:id="@+id/tv123"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="List of Centers"
             android:layout_centerInParent="true"
+            android:text="clickheretemp"
             android:textSize="15sp"
             android:gravity="center"
             />
@@ -45,8 +46,7 @@
             app:fabSize="normal"
             android:backgroundTint="@color/design_default_color_primary"
             android:elevation="6dp"
-            android:src="@drawable/ic_add"
-             />
+            android:src="@drawable/ic_add" />
 
     </RelativeLayout>
 

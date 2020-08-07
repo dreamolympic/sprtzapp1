@@ -7,18 +7,18 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class AcademyDetails extends AppCompatActivity {
+public class AcademyProfile extends AppCompatActivity {
 
     Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_academy_details);
+        setContentView(R.layout.activity_academy_profile);
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Academy Details");
+        getSupportActionBar().setTitle("Academy Profile");
 
         //to implement back button on tool bar
         getSupportActionBar().setDisplayShowHomeEnabled(true);

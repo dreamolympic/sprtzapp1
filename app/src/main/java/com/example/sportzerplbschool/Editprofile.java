@@ -7,18 +7,18 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class Myprofile extends AppCompatActivity {
+public class Editprofile extends AppCompatActivity {
 
     Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_myprofile);
+        setContentView(R.layout.activity_editprofile);
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("My Profile Screen");
+        getSupportActionBar().setTitle("Edit Player Profile");
 
         //to implement back button on tool bar
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -35,7 +35,7 @@ public class Myprofile extends AppCompatActivity {
         {
             finish();
         }
-
         return super.onOptionsItemSelected(item);
+
     }
 }

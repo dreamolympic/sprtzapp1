@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            app:titleTextColor="@color/cardview_light_background"
+            android:background="@color/colorAccent"/>
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Image"
+            app:srcCompat="@drawable/mylogo"/>
+
+        <TextView
+            android:id="@+id/tvfname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="First Name" />
+
+        <EditText
+            android:id="@+id/etfname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="First Name"/>
+
+        <TextView
+            android:id="@+id/tvlname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Last Name" />
+
+        <EditText
+            android:id="@+id/etlname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Last Name"/>
+
+        <TextView
+            android:id="@+id/tvgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Gender" />
+
+        <EditText
+            android:id="@+id/etgender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Select Gender"/>
+
+        <TextView
+            android:id="@+id/tvdob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Date of Birth" />
+
+        <EditText
+            android:id="@+id/etdob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Date of Birth"/>
+
+        <TextView
+            android:id="@+id/tvbloodgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Blood Group" />
+
+        <EditText
+            android:id="@+id/etbloodgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Blood Group"/>
+
+        <TextView
+            android:id="@+id/tvschool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="School" />
+
+        <EditText
+            android:id="@+id/etschool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="School"/>
+
+        <TextView
+            android:id="@+id/tvdominantside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Dominant Side" />
+
+        <EditText
+            android:id="@+id/etdominantside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Dominant Side"/>
+
+        <TextView
+            android:id="@+id/tvmedicalcondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Medical Condition" />
+
+        <EditText
+            android:id="@+id/etmedicalcondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Medical Condition"/>
+
+        <Button
+            android:id="@+id/btneditprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

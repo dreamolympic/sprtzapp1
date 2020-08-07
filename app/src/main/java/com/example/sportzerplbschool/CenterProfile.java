@@ -18,62 +18,62 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class DashboardManager extends AppCompatActivity {
+public class CenterProfile extends AppCompatActivity {
 
-    TextView mnumbermanager, countplayers, countcenters, countstaff, countroles, countfeeplans ;
-    DrawerLayout drawerLayout;
-    Toolbar toolbar;
-    ActionBarDrawerToggle toggle;
-    NavigationView nav;
-
+       TextView   countbatches, countplayers, countstaff;
+       DrawerLayout drawerLayout;
+       Toolbar toolbar;
+       ActionBarDrawerToggle toggle;
+       NavigationView nav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard_manager);
+        setContentView(R.layout.activity_center_profile);
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Academy Profile");
+        getSupportActionBar().setTitle("Center Profile");
 
-        drawerLayout = (DrawerLayout)findViewById(R.id.drawerlayoutmanager);
+        drawerLayout = (DrawerLayout)findViewById(R.id.drawerlayout);
         nav = (NavigationView)findViewById(R.id.nav);
-        toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar, R.string.open,R.string.close);
+        toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+
 
         nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
                 switch (item.getItemId())
                 {
                     case R.id.home:
+                        startActivity(new Intent(CenterProfile.this, DashboardManager.class));
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.centers :
-                        startActivity(new Intent(DashboardManager.this, Allcenterslist.class));
+                        startActivity(new Intent(CenterProfile.this, Allcenterslist.class));
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.players :
-                        startActivity(new Intent(DashboardManager.this, Allplayerslist.class ));
+                        startActivity(new Intent(CenterProfile.this, Allplayerslist.class ));
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.staff :
-                        startActivity(new Intent(DashboardManager.this, Allstafflist.class));
+                        startActivity(new Intent(CenterProfile.this, Allstafflist.class));
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.roles :
-                        startActivity(new Intent(DashboardManager.this, Allroleslist.class));
+                        startActivity(new Intent(CenterProfile.this, Allroleslist.class));
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.feeplans :
-                        startActivity(new Intent(DashboardManager.this, Allfeeplanslist.class));
+                        startActivity(new Intent(CenterProfile.this, Allfeeplanslist.class));
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
@@ -123,7 +123,7 @@ public class DashboardManager extends AppCompatActivity {
                         break;
 
                     case R.id.logout :
-                        startActivity(new Intent(DashboardManager.this, Login.class));
+                        startActivity(new Intent(CenterProfile.this, Login.class));
                         drawerLayout.closeDrawer(GravityCompat.START);
                         finish();
                         break;
@@ -132,110 +132,71 @@ public class DashboardManager extends AppCompatActivity {
 
 
                 return true;
+
             }
         });
 
+        int batchescount = 13;
+        countbatches = (TextView)findViewById(R.id.tvcenterdashboardbatches);
+        countbatches.setText(batchescount+ " Batches");
 
-        mnumbermanager = (TextView)findViewById(R.id.tvmnumbermanager);
-       // Bundle b = getIntent().getExtras();
-       // String number = b.getString("mobilenumberfromlogin");
-       // mnumbermanager.setText("Hello " + number);
-        mnumbermanager.setText("Hello Administrator" );
-
-
-        int centerscount = 2;
-        countcenters = (TextView)findViewById(R.id.tvdashboardcenters);
-        countcenters.setText(centerscount+"  Centers");
-
-        countcenters.setOnClickListener(new View.OnClickListener() {
+        countbatches.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(DashboardManager.this, Allcenterslist.class);
-                startActivity(intent1);
+                startActivity(new Intent(CenterProfile.this, CenterBatches.class));
             }
         });
 
-        int playerscount = 10;
-        countplayers = (TextView)findViewById(R.id.tvdashboardplayers);
-        countplayers.setText(playerscount+"  Players");
-
+        int playerscount = 11;
+        countplayers = (TextView)findViewById(R.id.tvcenterdashboardplayers);
+        countplayers.setText(playerscount+" Players");
 
         countplayers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(DashboardManager.this, Allplayerslist.class);
-                startActivity(intent2);
+                startActivity(new Intent(CenterProfile.this, CenterPlayers.class));
+
             }
         });
 
-        int staffcount = 11;
-        countstaff = (TextView)findViewById(R.id.tvdashboardstaff);
-        countstaff.setText(staffcount+"  Staff");
+        int staffcount = 4;
+        countstaff = (TextView)findViewById(R.id.tvcenterdashboardstaff);
+        countstaff.setText(staffcount+" Staff");
 
         countstaff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent3 = new Intent(DashboardManager.this, Allstafflist.class);
-                startActivity(intent3);
-            }
-        });
-
-        int rolescount = 4;
-        countroles = (TextView)findViewById(R.id.tvdashboardroles);
-        countroles.setText(rolescount+"  Roles");
-
-        countroles.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent4 = new Intent(DashboardManager.this, Allroleslist.class);
-                startActivity(intent4);
+                startActivity(new Intent(CenterProfile.this, CenterStaff.class));
             }
         });
 
 
-        int feeplanscount = 2;
-        countfeeplans = (TextView)findViewById(R.id.tvdashboardfeeplans);
-        countfeeplans.setText(feeplanscount+"  Fee Plans");
-
-        countfeeplans.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent5 = new Intent(DashboardManager.this, Allfeeplanslist.class);
-                startActivity(intent5);
-            }
-        });
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_options_dashboard_manager,menu);
+        inflater.inflate(R.menu.menu_options_center_profile,menu);
         return true;
     }
-
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.editacademy:
-                Intent intent1 = new Intent(DashboardManager.this, AcademyProfile.class);
-                startActivity(intent1);
+            case R.id.editcenter:
+                startActivity(new Intent(CenterProfile.this, Editcenter.class));
                 return true;
 
-            case R.id.deleteacademy:
-                Intent intent2 = new Intent(DashboardManager.this, DashboardManager.class);
-                startActivity(intent2);
+            case R.id.deletecenter:
+                Toast.makeText(getApplicationContext(), "Delete screen yet to create", Toast.LENGTH_LONG).show();
                 return true;
 
             default:
-            return super.onOptionsItemSelected(item);
+                return super.onOptionsItemSelected(item);
 
         }
-
     }
-
 
 
 }

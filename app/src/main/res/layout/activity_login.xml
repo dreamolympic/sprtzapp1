@@ -130,7 +130,7 @@
     <TextView
         android:id="@+id/tvusertype"
         android:layout_width="wrap_content"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:text="User type : "
         android:layout_marginTop="15dp"
         android:layout_gravity="center_horizontal"

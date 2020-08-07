@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -54,7 +53,8 @@ public class DashboardUser extends AppCompatActivity {
                          break;
 
                      case R.id.profile:
-                         startActivity(new Intent(DashboardUser.this, Myprofile.class));
+                         startActivity(new Intent(DashboardUser.this, Profile.class));
+                        // Toast.makeText(getApplicationContext(),"Profile panel is clicked",Toast.LENGTH_LONG).show();
                          drawerLayout.closeDrawer(GravityCompat.START);
                          break;
 
@@ -114,7 +114,7 @@ public class DashboardUser extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.user_dashboard_menu, menu);
+        inflater.inflate(R.menu.menu_options_dashboard_user, menu);
         return true;
     }
 

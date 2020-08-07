@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -19,6 +20,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class Allcenterslist extends AppCompatActivity {
 
+    TextView tv1; //to be removed later
     DrawerLayout drawerLayout;
     Toolbar toolbar;
     ActionBarDrawerToggle toggle;
@@ -137,6 +139,14 @@ public class Allcenterslist extends AppCompatActivity {
             }
         } );
 
+        //to be removed later
+        tv1 = (TextView)findViewById(R.id.tv123);
+        tv1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Allcenterslist.this,CenterProfile.class));
+            }
+        });
 
     }
 
