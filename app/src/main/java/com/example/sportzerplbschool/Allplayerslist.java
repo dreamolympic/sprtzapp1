@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -18,15 +19,19 @@ import com.google.android.material.navigation.NavigationView;
 
 public class Allplayerslist extends AppCompatActivity {
 
+       TextView textView; //to be removed once this is re-pointed.
        DrawerLayout drawerLayout;
        Toolbar toolbar;
        ActionBarDrawerToggle toggle;
        NavigationView nav;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_allplayerslist);
+
+        textView = (TextView)findViewById(R.id.tvtext123) ;//to be removed later
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -138,6 +143,14 @@ public class Allplayerslist extends AppCompatActivity {
                 }
                 return true;
 
+            }
+        });
+
+        //to be removed later
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Allplayerslist.this, Player_profile_manager.class));
             }
         });
 
